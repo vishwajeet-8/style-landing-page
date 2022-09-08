@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Font Orbiton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#FFFFFF"
+            },
+          },
+        },
+      };
+    </script>
+    <title>Style landing page</title>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="navbar-container flex justify-between items-center p-8">
+      <div class="inline-block text-3xl lg:hidden">
+        <i class="fa-solid fa-bars cursor-pointer"></i>
+      </div>
+      <div class="">
+        <img class="h-10" src="/assets/Logo.png" alt="brand-logo" />
+      </div>
+      <div class="lg:mx-auto">
+        <ul
+          class="list font-['Orbitron'] hidden lg:inline-block lg:flex space-x-10"
+        >
+          <li
+            class="list-item font-[600] text-xl hover:font-[900] cursor-pointer hover:underline underline-offset-4"
+          >
+            Home
+          </li>
+          <li
+            class="list-item font-[600] text-xl hover:font-[900] cursor-pointer hover:underline underline-offset-4"
+          >
+            FAQ
+          </li>
+          <li
+            class="list-item font-[600] text-xl hover:font-[900] cursor-pointer hover:underline underline-offset-4"
+          >
+            Male
+          </li>
+          <li
+            class="list-item font-[600] text-xl hover:font-[900] cursor-pointer hover:underline underline-offset-4"
+          >
+            Female
+          </li>
+          <li
+            class="list-item font-[600] text-xl hover:font-[900] cursor-pointer hover:underline underline-offset-4"
+          >
+            About
+          </li>
+        </ul>
+      </div>
+      <div class="button-group flex items-center space-x-2 absolute right-0">
+        <div class="search-icon cursor-pointer">
+          <i class="text-3xl md:text-2xl fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="">
+          <button
+            class="nav-button hidden md:inline-block font-['Poppins'] text-[1.2rem] border-2 border-black rounded-lg px-10"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+
+    <div class="hero-container lg:flex items-center">
+      <!-- --------------- -->
+      <!-- Patterns -->
+      <!-- ---------------- -->
+      <div class=" lg:w-2/5">
+        <span class="square absolute z-0 hidden lg:inline-block lg:left-36 xl:inline-block xl:left-52 top-80 2xl:hidden">
+          <img
+            src="/assets/squares.png"
+            alt="square-pattern"
+            class="max-w-xs"
+          />
+        </span>
+        <!-- Star -->
+        <span class="star">
+          <img
+            src="/assets/start.png"
+            alt="start-pattern"
+            class="hidden lg:inline-block absolute right-0"
+          />
+        </span>
+        <!-- Globe -->
+        <span class="globe">
+          <img
+            src="/assets/globe.png"
+            alt="globe-pattern"
+            class="hidden lg:inline-block relative left-[700px] h-10"
+          />
+        </span>
+        <div class="flex justify-center">
+          <img
+            src="/assets/Image.png"
+            alt="person-hero-iamge"
+            class="relative z-10 lg:bottom-12 lg:max-w-sm"
+          />
+        </div>
+      </div>
+      <div class="hero-container-right lg:w-3/5 flex flex-col items-center p-4 lg:mt-20">
+        <h1 class="hero-heading text-3xl font-['Orbitron'] font-bold lg:text-4xl xl:text-5xl">What’s Trend in 2025 ?</h1>
+        <p class="hero-description text-center font-['Poppins'] text-sm opacity-70 p-6 xl:mx-20 xl:my-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor in- cididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        </p>
+        <div class="space-x-2">
+          <button class="button-email font-['Orbitron'] font-semibold opacity-70 px-4 border-2 border-black rounded-lg">Email Address</button>
+          <button class="button-join font-['Orbitron'] font-semibold text-white border-2 border-black rounded-lg bg-black px-4">JOIN NOW</button>
+        </div>
+        <div class="flex flex-col items-center mt-10 lg:mt-20">
+          <h4 class="contact-heading font-['Poppins'] opacity-70">Contact us</h4>
+          <div class="icons flex p-2">
+            <span class="p-2">
+              <img src="/assets/Group.png" alt="facebook-icon" class="h-10"/>
+            </span>
+            <span class="p-2">
+              <img src="/assets/Group (1).png" alt="messenger-icon" class="h-10"/>
+            </span>
+            <span class="p-2">
+              <img src="/assets/Group (2).png" alt="instagram-icon" class="h-10"/>
+            </span>
+            <span class="p-2">
+              <img src="/assets/Group (3).png" alt="whatsapp-icon" class="h-10"/>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
